@@ -1,65 +1,638 @@
 <!doctype html>
 <html lang="ru">
-<head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width,initial-scale=1">
- <meta name="theme-color" content="#171918">
- <title>ЗакупОчка — 108 241 сообщение спустя</title>
- <meta name="description" content="Собирались заказать пиццу, а написали целую летопись. Участники, мемы, хронология и аналитика Закупочки за 2025–2026 годы.">
- <link rel="canonical" href="https://farrahovd234.github.io/zakupochka/">
- <meta property="og:type" content="website">
- <meta property="og:title" content="ЗакупОчка — 108 241 сообщение спустя">
- <meta property="og:description" content="Пицца была только началом. 417 дней, 32 авторских имени и собственный мемный фонд.">
- <meta property="og:url" content="https://farrahovd234.github.io/zakupochka/">
- <meta property="og:image" content="https://farrahovd234.github.io/zakupochka/assets/og.png">
- <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
- <meta name="twitter:card" content="summary_large_image">
- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
- <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
- <link rel="preload" href="assets/golos-400.ttf" as="font" type="font/ttf" crossorigin>
- <link rel="stylesheet" href="styles.css">
- <script src="data.js" defer></script><script src="app.js" defer></script>
-</head>
-<body>
-<a class="skip" href="#main">К содержанию</a>
-<div class="layout">
- <aside class="sidebar" id="sidebar">
-  <a class="wordmark" href="#overview">ЗакупОчка<span>на сбор друзей</span></a>
-  <button class="mobile-menu" id="menu-toggle" aria-expanded="false" aria-controls="navigation">Разделы</button>
-  <nav id="navigation" aria-label="Разделы летописи">
-   <a href="#overview" data-nav="overview"><span class="nav-number">01</span>Сводка</a>
-   <a href="#analysis" data-nav="analysis"><span class="nav-number">02</span>Разбор полётов</a>
-   <a href="#people" data-nav="people"><span class="nav-number">03</span>Действующие лица</a>
-   <a href="#chronicle" data-nav="chronicle"><span class="nav-number">04</span>Хроника</a>
-   <a href="#memes" data-nav="memes"><span class="nav-number">05</span>Мемный фонд</a>
-   <a href="#cast" data-nav="cast"><span class="nav-number">06</span>Внешний круг</a>
-   <a href="#method" data-nav="method"><span class="nav-number">07</span>Как считали</a>
-   <a href="#search" data-nav="search"><span class="nav-number">08</span>Поиск</a>
-  </nav>
-  <div class="sidebar-bottom"><span class="mono">17.09.2025 — 07.11.2026</span><p>Архив общего<br>«а чё у нас завтра»</p><a href="https://github.com/farrahovd234/zakupochka" target="_blank" rel="noreferrer">Исходный код</a></div>
- </aside>
- <div class="content">
-  <header class="topbar"><span class="edition">Публичная летопись · 2025—2026</span><div class="top-actions"><button id="search-shortcut" class="quiet">Найти <kbd>/</kbd></button><button id="theme-toggle" class="quiet" aria-label="Переключить тему">Темнее</button></div></header>
-  <main id="main" tabindex="-1">
-   <section data-view="overview">
-    <div class="hero"><div class="hero-copy"><span class="section-index mono">01 / Сводка</span><h1>Собирались<br>заказать <span class="accent">пиццу</span></h1><p class="hero-description">Дальше были учёба, медовуха и научно-исследовательский пиздец. Теперь всё это хотя бы посчитано.</p><div class="hero-actions"><a class="button primary" href="#chronicle">Открыть летопись</a><a class="text-link" href="#people">Найти своё имя</a></div></div><div class="hero-total"><div class="mono small muted">Сентябрь 2025 — ноябрь 2026</div><div class="huge-number" id="hero-total">108 241</div><div class="hero-total-label">сообщение спустя</div><div class="hero-total-note">Пицца была только началом</div></div></div>
-    <div class="stats-strip" id="stats-strip"></div>
-    <section class="chart-section"><div class="section-heading"><div><span class="section-index mono">Счётчик пережил многое</span><h2>Сентябрь выбрал нас</h2></div><div class="chart-selection" id="chart-selection" aria-live="polite"></div></div><div class="chart-layout"><div class="main-chart"><div id="activity-chart" class="activity-chart"></div><div class="chart-footer"><span class="small muted">Сообщений за день · все 417 дней</span><label class="date-control">Проверить день<input type="date" id="chart-date" min="2025-09-17" max="2026-11-07" value="2026-09-11"></label></div></div><aside class="chart-aside"><span class="mono small muted">Осенний перегрев</span><div class="aside-number">29 620</div><p>сообщений за сентябрь</p><div class="comparison">×16,4 <span>к августу 2026</span></div><p class="small muted">Группы, физра, расписание и НВК. Оказалось, выбор секции — командный вид спорта.</p><a class="text-link small" href="#chronicle?month=2026-09">Что там происходило</a></aside></div></section>
-    <div class="overview-bottom"><section class="leader-block"><div class="section-heading compact"><h2>Кто держит поток</h2><a class="small text-link" href="#people">Все 32 имени</a></div><div id="leaderboard"></div><p class="small muted">Число отправок, включая медиа и пересылки. Громче — не обязательно длиннее.</p></section><section class="editor-note"><span class="mono small muted">Редакторская заметка № 001</span><h2>Бот ушёл<br>Домашка осталась</h2><p>Сначала Сглыпа, потом Чатикус, потом Мира. Искусственный интеллект пришёл помогать. Получил роли, лор и админские последствия.</p><a class="text-link" href="#memes?q=бот">Разобраться с ботами</a><div class="bot-line"><span>Март<span>Сглыпа</span></span><span>Сентябрь<span>Чатикус</span></span><span>Октябрь<span>Мира</span></span></div></section></div>
-    <div class="closing-note"><span class="mono small">Итог наблюдения</span><p>Начали с общей закупки.<br>Дошли до архива собственной цивилизации.</p><a href="#analysis" class="text-link">Читать разбор полётов</a></div>
-   </section>
-   <section data-view="analysis" hidden><div class="page-heading"><span class="section-index mono">02 / По существу</span><h1>Разбор полётов</h1><p>Как один сбор друзей оброс учебной инфраструктурой, собственными ролями и отделом коллективной памяти.</p></div><div id="analysis-insights" class="insight-strip"></div><div id="chapters" class="chapters"></div><section class="month-register"><h2>Весь срок наблюдения</h2><div id="month-list"></div></section></section>
-   <section data-view="people" hidden><div class="page-heading"><span class="section-index mono">03 / Кто всё это написал</span><h1>Действующие лица</h1><p>29 неботовых имён и 3 бот-профиля. Один ник — ещё не одно доказанное физическое лицо. Зато ни одного тихого участника не потеряли.</p></div><div class="controls"><label class="field grow">Имя или роль<input id="people-query" type="search" placeholder="Например, Виталий" autocomplete="off"></label><label class="field">Порядок<select id="people-sort"><option value="messages">По отправкам</option><option value="characters">По объёму текста</option><option value="activeDays">По активным дням</option><option value="name">По имени</option></select></label><label class="field">Кто<select id="people-type"><option value="all">Все</option><option value="human">Без ботов</option><option value="bot">Боты</option></select></label></div><div class="result-label mono" id="people-count" aria-live="polite"></div><div class="people-list" id="people-list"></div></section>
-   <section data-view="chronicle" hidden><div class="page-heading"><span class="section-index mono">04 / Даты имеют значение</span><h1>Хроника закупочки</h1><p>174 опорные сцены от первого заказа до собственного лора. Заголовки — редакторский пересказ. Предложение, шутка и состоявшееся действие различаются.</p></div><div class="controls"><label class="field grow">Событие<input type="search" id="chronicle-query" placeholder="Сбор, слоты, бот" autocomplete="off"></label><label class="field">Месяц<select id="chronicle-month"><option value="all">Всё время</option></select></label><label class="field">Тема<select id="chronicle-kind"><option value="all">Все темы</option></select></label></div><div class="result-label mono" id="chronicle-count" aria-live="polite"></div><div class="chronicle" id="chronicle-list"></div><div class="pagination"><button id="chronicle-prev" class="button secondary">Раньше</button><span id="chronicle-page" class="mono small"></span><button id="chronicle-next" class="button secondary">Позже</button></div></section>
-   <section data-view="memes" hidden><div class="page-heading"><span class="section-index mono">05 / Фонд местного значения</span><h1>Мемы не смываются</h1><p>63 сюжета, к которым возвращались. Одни появились из расписания, другие — из еды. Дальше всё решала коллективная память.</p></div><div class="controls"><label class="field grow">Название или смысл<input type="search" id="meme-query" placeholder="Медовуха, боты, сбор друзей" autocomplete="off"></label><label class="field">Порядок<select id="meme-sort"><option value="editorial">По истории</option><option value="mentions">По текстовому следу</option><option value="name">По названию</option></select></label></div><div id="meme-count" class="result-label mono" aria-live="polite"></div><div id="meme-list" class="meme-grid"></div></section>
-   <section data-view="cast" hidden><div class="page-heading"><span class="section-index mono">06 / Орбита закупочки</span><h1>Внешний круг</h1><p>Преподаватели, медийные персонажи, обращения и инструменты. 76 поисковых карточек — не 76 дополнительных участников чата.</p></div><div class="controls"><label class="field grow">Имя или контекст<input type="search" id="cast-query" placeholder="Тарасов, алгоритмы, AI" autocomplete="off"></label></div><div id="cast-count" class="result-label mono" aria-live="polite"></div><div class="cast-list" id="cast-list"></div></section>
-   <section data-view="method" hidden><div class="page-heading"><span class="section-index mono">07 / Чтобы цифры не стали новым лором</span><h1>Как считали</h1><p>Источник — экспорт Telegram за 17 сентября 2025 — 7 ноября 2026. У истории есть границы, а у чисел — определения.</p></div><div class="method-layout"><div class="method-body"><h2>Публичная редакция</h2><p>На сайте — агрегированная статистика, тематические карточки и редакторский пересказ событий. Исходная переписка, личные адреса, телефоны, вложения и файлы экспорта сюда не перенесены.</p><h2>Что означает счётчик</h2><p>108 241 — число обычных сообщений, включая пересылки, медиа и отправки без доступного текста. Служебные события и разделители дат в это число не входят.</p><h2>Имена не равны людям</h2><p>Стабильных пользовательских ID в HTML-экспорте нет. Похожие имена не объединялись автоматически. Боты, внешние упоминания и авторы пересылок учитываются отдельно.</p><h2>Где заканчивается факт</h2><p>Сообщение с планом доказывает наличие плана. Прозвище не устанавливает профессию или возраст. Ответ бота может повторять назначенную ему роль. Личные сведения и предположения не превращались в публичные биографии.</p><h2>Текстовый след</h2><p>Счётчики сюжетов отражают совпадения поисковых маркеров. Темы пересекаются, у слов бывают омонимы. Поэтому первая дата совпадения — не обязательно день рождения мема, а суммы сюжетов не обязаны давать 100%.</p><h2>Недоступное содержимое</h2><p>Большая часть медиа не выгружена. Ещё 4 549 отправок не содержат ни текста, ни описания вложения. Они учтены в количестве сообщений, но их содержимое не реконструируется.</p><h2>Про сотку отдельно</h2><p>В переписке юбилей объявлен 24 октября 2026 года. Этот внутренний ритуальный счётчик не приравнивается автоматически к Telegram-ID или номеру записи анализа.</p><div class="downloads"><a href="statistika.csv" download class="button secondary">Статистика по месяцам</a><a href="uchastniki.csv" download class="text-link">Таблица участников</a></div></div><aside class="method-register" id="method-register"></aside></div></section>
-   <section data-view="search" hidden><div class="page-heading"><span class="section-index mono">08 / Где-то это уже было</span><h1>Поиск по летописи</h1><p>Имена, события и мемы публичной редакции. Полного текста переписки на сайте нет.</p></div><label class="field global-search">Что ищем<input id="global-query" type="search" placeholder="Например, медовуха" autocomplete="off"></label><div class="search-kinds" id="search-kinds"><button data-search-kind="all" class="is-active">Всё</button><button data-search-kind="person">Участники</button><button data-search-kind="scene">События</button><button data-search-kind="meme">Мемы</button><button data-search-kind="entity">Внешний круг</button></div><div class="result-label mono" id="search-count" aria-live="polite"></div><div id="search-results"></div></section>
-  </main>
-  <footer><div>ЗакупОчка <span class="muted">· публичная летопись</span><span class="footer-period mono">2025—2026</span></div><div class="footer-links"><a href="#method">О данных</a><a href="https://github.com/farrahovd234/zakupochka" target="_blank" rel="noreferrer">GitHub</a><a href="https://github.com/heydamir/unslop" target="_blank" rel="noreferrer">unslop — Damir Sokolovsky</a></div></footer>
- </div>
-</div>
-<dialog id="profile-dialog"><form method="dialog" class="dialog-top"><span class="mono small muted">Карточка участника</span><button aria-label="Закрыть карточку" class="quiet">Закрыть</button></form><div id="profile-content"></div></dialog>
-<noscript><p class="noscript">Для фильтров и карточек нужен JavaScript. На сайте опубликована только аналитическая версия истории, без исходной переписки.</p></noscript>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f2e9" />
+    <title>ЗакупОчка — летопись общего чата</title>
+    <meta
+      name="description"
+      content="417 дней, 108 241 сообщение и одна общая история. Интерактивная летопись Закупочки: от первого сбора до собственного мемного фонда."
+    />
+    <link rel="canonical" href="https://farrahovd234.github.io/zakupochka/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ЗакупОчка — летопись общего чата" />
+    <meta
+      property="og:description"
+      content="От первого сбора до собственной мифологии. История, люди, мемы и настоящие цифры за 2025–2026 годы."
+    />
+    <meta
+      property="og:url"
+      content="https://farrahovd234.github.io/zakupochka/"
+    />
+    <meta
+      property="og:image"
+      content="https://farrahovd234.github.io/zakupochka/assets/og.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link
+      rel="preload"
+      href="assets/lora-400.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/golos-400.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css?v=20261108-2" />
+    <script src="data.js?v=20261108-2" defer></script>
+    <script src="app.js?v=20261108-2" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержанию</a>
+    <header class="site-header">
+      <a class="brand" href="#overview" aria-label="ЗакупОчка — на главную"
+        ><span class="brand-mark" aria-hidden="true">З</span
+        ><span>ЗакупОчка<span class="brand-note">на сбор друзей</span></span></a
+      >
+      <nav class="main-nav" id="navigation" aria-label="Основные разделы">
+        <a href="#analysis" data-nav="analysis">История</a
+        ><a href="#people" data-nav="people">Люди</a
+        ><a href="#memes" data-nav="memes">Мемы</a
+        ><a href="#numbers" data-nav="numbers">В цифрах</a
+        ><a href="#chronicle" data-nav="chronicle">Все события</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#search" class="icon-button" aria-label="Поиск по летописи"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5" />
+            <path d="m16 16 5 5" /></svg></a
+        ><button
+          class="icon-button"
+          id="theme-toggle"
+          aria-label="Включить тёмную тему"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 14A8 8 0 0 1 10 4a8 8 0 1 0 10 10Z" />
+          </svg></button
+        ><button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          Меню <span aria-hidden="true">+</span>
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section data-view="overview">
+        <div class="edition-line wrap">
+          <span>Летопись общего чата</span><span>17.09.2025 — 07.11.2026</span
+          ><span>Издание № 01</span>
+        </div>
+        <div class="masthead wrap">
+          <h1>ЗакупОчка<span class="masthead-dot">.</span></h1>
+          <div class="masthead-caption">
+            <span>Началось со сбора друзей</span
+            ><span>Продолжилось собственной историей</span>
+          </div>
+        </div>
+        <section class="hero wrap">
+          <div class="hero-copy">
+            <span class="eyebrow"
+              ><span class="small-rule"></span> Архив того, как мы были
+              вместе</span
+            >
+            <h2>
+              Просто хотели<br />собраться.<br /><span class="ink-accent"
+                >И понеслось.</span
+              >
+            </h2>
+            <p class="hero-description">
+              Учёба, медовуха, боты и великие планы.
+              <span id="hero-message-count">108 241</span> сообщение спустя у
+              общего чата появилась своя летопись.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" id="start-reading" href="#analysis"
+                >Читать историю <span aria-hidden="true">↗</span></a
+              ><button class="text-link" data-random>
+                Случайный поворот <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="hero-footnote">
+              <span class="mono">32</span> авторских имени
+              <span class="dot-separator">·</span>
+              <span class="mono">174</span> опорные сцены
+            </div>
+          </div>
+          <div class="orbit-panel">
+            <div class="orbit-top mono">
+              <span>Пульс закупочки</span><span>Каждая черта — один день</span>
+            </div>
+            <div class="orbit-visual" id="orbit-visual">
+              <div class="orbit-center">
+                <span class="orbit-number">417</span
+                ><span>дней одной<br />общей истории</span>
+              </div>
+            </div>
+            <div class="orbit-selection">
+              <div>
+                <time id="orbit-date">11 сентября 2026</time
+                ><span id="orbit-count">3 116 сообщений</span>
+              </div>
+              <a
+                id="orbit-link"
+                href="#chronicle?date=2026-09-11"
+                class="round-link"
+                aria-label="События рядом с выбранным днём"
+                >↗</a
+              >
+            </div>
+            <label class="orbit-range-label"
+              ><span class="sr-only">Выбрать день истории</span
+              ><input
+                type="range"
+                id="orbit-range"
+                min="0"
+                max="416"
+                value="359"
+              /><span class="range-endpoints mono"
+                ><span>Сентябрь ’25</span><span>Ноябрь ’26</span></span
+              ></label
+            >
+          </div>
+        </section>
+        <div class="opening-note wrap">
+          <span class="mono">Если коротко</span>
+          <p>
+            Сначала закупали еду.<br />Потом —
+            <span class="ink-accent">коллективную память.</span>
+          </p>
+          <span class="note-aside"
+            >Этот архив можно читать по порядку.<br />А можно уйти за одним
+            мемом<br />и вернуться через три эпохи.</span
+          >
+        </div>
+        <section class="section-space wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">01 / Вся история</span>
+              <h2>У каждого времени<br />свой общий чат</h2>
+            </div>
+            <a href="#analysis" class="text-link"
+              >Открыть оглавление <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="era-shelf" id="era-shelf"></div>
+        </section>
+        <section class="paths-section">
+          <div class="wrap">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">02 / Зацепиться за сюжет</span>
+                <h2>Можно начать<br />с местной классики</h2>
+              </div>
+              <span class="section-aside"
+                >Один сюжет — несколько эпох.<br />Выбери свою нить.</span
+              >
+            </div>
+            <div id="path-list" class="path-list"></div>
+          </div>
+        </section>
+        <section class="people-preview section-space wrap">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">03 / Человеческий фактор</span>
+              <h2>Чат сам себя<br />не напишет</h2>
+            </div>
+            <a href="#people" class="text-link"
+              >Все 32 имени <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div id="people-preview" class="people-preview-list"></div>
+          <p class="caption">
+            Здесь считают отправки, включая медиа и пересылки. Количество
+            сообщений — только одна сторона истории.
+          </p>
+        </section>
+        <section class="ending wrap">
+          <span class="eyebrow">Не последняя глава</span>
+          <h2>
+            Архив закончился.<br />История —
+            <span class="ink-accent">пока нет.</span>
+          </h2>
+          <p>
+            Последняя доступная запись — 7 ноября 2026 года. Всё, что было
+            дальше, ещё предстоит записать.
+          </p>
+          <a class="text-link" href="#analysis"
+            >Начать с самого начала <span aria-hidden="true">↗</span></a
+          >
+        </section>
+      </section>
+
+      <section data-view="analysis" hidden class="wrap reader-view">
+        <div class="page-heading">
+          <div>
+            <a class="back-link" href="#overview">← На обложку</a
+            ><span class="eyebrow">История в главах</span>
+          </div>
+          <h1>От сбора друзей<br />до своей вселенной</h1>
+          <p>
+            Девять отрезков одной истории. Читать подряд, пропускать главы,
+            узнавать знакомое.
+          </p>
+        </div>
+        <div class="reader-layout">
+          <aside class="chapter-nav">
+            <span class="mono caption">Оглавление</span>
+            <nav id="chapter-nav" aria-label="Главы истории"></nav>
+            <a href="#chronicle" class="text-link caption">Все 174 сцены ↗</a>
+          </aside>
+          <div id="chapter-body" class="chapter-body"></div>
+        </div>
+      </section>
+
+      <section data-view="chronicle" hidden class="wrap inner-view">
+        <div class="page-heading">
+          <span class="eyebrow">Архив поворотных моментов</span>
+          <h1>Даты имеют значение</h1>
+          <p>
+            174 опорные сцены. За каждой — конкретная запись архива, а не
+            восстановленное по памяти «кажется, было так».
+          </p>
+        </div>
+        <div class="filter-bar">
+          <label class="field grow"
+            >Найти событие<input
+              type="search"
+              id="chronicle-query"
+              placeholder="Мира, сбор, домашка"
+              autocomplete="off" /></label
+          ><label class="field"
+            >Период<select id="chronicle-month">
+              <option value="all">Всё время</option>
+            </select></label
+          ><label class="field"
+            >Линия истории<select id="chronicle-kind">
+              <option value="all">Все темы</option>
+            </select></label
+          >
+        </div>
+        <div id="chronicle-context"></div>
+        <div class="results-line">
+          <span id="chronicle-count" role="status"></span
+          ><button class="text-link caption" id="chronicle-reset">
+            Сбросить фильтры
+          </button>
+        </div>
+        <div id="chronicle-list" class="chronicle-list"></div>
+        <div class="pagination">
+          <button class="button secondary" id="chronicle-prev">← Раньше</button
+          ><span id="chronicle-page" class="mono"></span
+          ><button class="button secondary" id="chronicle-next">Позже →</button>
+        </div>
+      </section>
+
+      <section data-view="people" hidden class="wrap inner-view">
+        <div class="page-heading">
+          <span class="eyebrow">Действующие лица</span>
+          <h1>Каждый со<br />своим почерком</h1>
+          <p>
+            29 неботовых имён и 3 бот-имени. Кто держит поток, кто пишет
+            трактаты, а кто появляется ровно тогда, когда нужен.
+          </p>
+        </div>
+        <div class="filter-bar">
+          <label class="field grow"
+            >Имя или роль<input
+              type="search"
+              id="people-query"
+              placeholder="Найти знакомое имя"
+              autocomplete="off" /></label
+          ><label class="field"
+            >Порядок<select id="people-sort">
+              <option value="messages">По отправкам</option>
+              <option value="characters">По объёму текста</option>
+              <option value="activeDays">По активным дням</option>
+              <option value="name">По имени</option>
+            </select></label
+          ><label class="field"
+            >Кто<select id="people-type">
+              <option value="all">Все имена</option>
+              <option value="human">Без ботов</option>
+              <option value="bot">Боты</option>
+            </select></label
+          >
+        </div>
+        <div class="results-line">
+          <span id="people-count" role="status"></span
+          ><span class="caption">Роли — редакторский взгляд на переписку</span>
+        </div>
+        <div id="people-list" class="people-list"></div>
+      </section>
+
+      <section data-view="memes" hidden class="wrap inner-view">
+        <div class="page-heading">
+          <span class="eyebrow">Фонд местного значения</span>
+          <h1>Одни слова.<br />Слишком много контекста.</h1>
+          <p>
+            63 сюжета, к которым возвращались. У каждого — свой текстовый след,
+            своя интонация и несколько поводов сказать «это надо знать».
+          </p>
+        </div>
+        <div class="filter-bar">
+          <label class="field grow"
+            >Слова или смысл<input
+              id="meme-query"
+              type="search"
+              placeholder="Медовуха, слоты, боты"
+              autocomplete="off" /></label
+          ><label class="field"
+            >Порядок<select id="meme-sort">
+              <option value="editorial">По летописи</option>
+              <option value="mentions">По текстовому следу</option>
+              <option value="name">По названию</option>
+            </select></label
+          >
+        </div>
+        <div class="results-line">
+          <span id="meme-count" role="status"></span
+          ><span class="caption"
+            >Дата первого совпадения не равна рождению мема</span
+          >
+        </div>
+        <div id="meme-list" class="meme-list"></div>
+      </section>
+
+      <section data-view="numbers" hidden class="wrap inner-view">
+        <div class="page-heading">
+          <span class="eyebrow">За большой историей — большие числа</span>
+          <h1>Это всё<br />правда посчитано</h1>
+          <p>
+            Каждая точка — день, каждое значение — из экспорта. Никаких
+            придуманных всплесков для красивой картинки.
+          </p>
+        </div>
+        <div id="number-strip" class="number-strip"></div>
+        <section class="activity-section">
+          <div class="section-heading compact">
+            <div>
+              <span class="eyebrow">Дневная активность</span>
+              <h2>Сентябрь выбрал нас</h2>
+            </div>
+            <div
+              id="chart-selection"
+              class="chart-selection"
+              aria-live="polite"
+            ></div>
+          </div>
+          <div class="chart-layout">
+            <div class="main-chart">
+              <div id="activity-chart" class="activity-chart"></div>
+              <div class="chart-footer">
+                <span class="caption"
+                  >417 календарных дней · сообщений за день</span
+                ><label class="field inline-field"
+                  >Проверить день<input
+                    type="date"
+                    id="chart-date"
+                    min="2025-09-17"
+                    max="2026-11-07"
+                    value="2026-09-11"
+                /></label>
+              </div>
+            </div>
+            <aside class="chart-aside">
+              <span class="eyebrow">Осенний перегрев</span
+              ><strong id="september-total">29 620</strong>
+              <p>отправок за сентябрь 2026</p>
+              <div class="comparison" id="september-ratio"></div>
+              <a class="text-link" href="#chronicle?month=2026-09"
+                >Что происходило ↗</a
+              >
+            </aside>
+          </div>
+          <a
+            class="text-link caption"
+            id="chart-day-link"
+            href="#chronicle?date=2026-09-11"
+            >События рядом с выбранным днём ↗</a
+          >
+        </section>
+        <section class="section-space">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">От месяца к месяцу</span>
+              <h2>То тишина,<br />то всё сразу</h2>
+            </div>
+          </div>
+          <div id="month-list" class="month-list"></div>
+        </section>
+        <section class="data-note">
+          <h2>Отправки — не мысли</h2>
+          <p>
+            В числе сообщений есть медиа, пересылки, короткие реакции и серии из
+            одного символа. Большой счётчик не означает столько же
+            самостоятельных высказываний. Похожее отображаемое имя не
+            доказывает, что перед нами один человек.
+          </p>
+          <a href="#method" class="text-link">Как устроен подсчёт ↗</a>
+        </section>
+      </section>
+
+      <section data-view="cast" hidden class="wrap inner-view">
+        <div class="page-heading">
+          <span class="eyebrow">Орбита закупочки</span>
+          <h1>Говорили и о них</h1>
+          <p>
+            Преподаватели, знакомые, персонажи и инструменты. Упоминание в
+            переписке не делает их участниками группы.
+          </p>
+        </div>
+        <label class="field wide-field"
+          >Имя или контекст<input
+            id="cast-query"
+            type="search"
+            placeholder="Тарасов, алгоритмы, AI"
+            autocomplete="off"
+        /></label>
+        <div class="results-line">
+          <span id="cast-count" role="status"></span
+          ><span class="caption"
+            >Совпадения по поисковым шаблонам могут быть неоднозначны</span
+          >
+        </div>
+        <div id="cast-list" class="cast-list"></div>
+      </section>
+
+      <section data-view="method" hidden class="wrap inner-view">
+        <div class="page-heading">
+          <span class="eyebrow">Редакционная кухня</span>
+          <h1>Чтобы цифры<br />не стали новым лором</h1>
+          <p>
+            Что мы знаем точно, где начинается интерпретация и почему у одних и
+            тех же чисел бывает разный смысл.
+          </p>
+        </div>
+        <div class="method-layout">
+          <article class="prose">
+            <h2>Один экспорт. Весь доступный период.</h2>
+            <p>
+              Источник — 109 HTML-файлов экспорта Telegram. Первая доступная
+              запись: 17 сентября 2025 года, последняя: 7 ноября 2026 года.
+              Время — UTC+05:00. 108 241 сообщение и 263 служебных события
+              считаются отдельно; заголовки дат сообщениями не являются.
+            </p>
+            <h2>Как читать рисунки</h2>
+            <p>
+              Круг на обложке показывает относительную активность: длина черты
+              растёт по нелинейной шкале, чтобы были видны и тихие дни. Точное
+              число появляется под кругом при выборе дня. Дневной график в
+              разделе «В цифрах» использует линейную шкалу и все 417 календарных
+              значений, включая нули.
+            </p>
+            <h2>Имя — ещё не человек</h2>
+            <p>
+              В экспорте 32 авторских имени, из них 3 бот-имени. Устойчивых ID
+              пользователей в HTML нет, поэтому похожие имена не объединены.
+              Источники пересылок и люди только в реакциях не прибавлены к
+              авторам.
+            </p>
+            <h2>Сцена, шутка, план</h2>
+            <p>
+              174 сцены отобраны редакторски. В карточке указан номер опорной
+              записи и характер источника. Просьба о помощи не превращается в
+              выполненную помощь, шутка — в биографию, а идея встречи — в
+              подтверждённую встречу. Номер записи анализа отличается от
+              Telegram-ID.
+            </p>
+            <h2>Мемы оставляют поисковый след</h2>
+            <p>
+              63 сюжетные линии выделены по текстовым шаблонам и описаны
+              редакторски. Число совпадений не равно числу обсуждений. Первое
+              совпадение не обязательно означает появление мема. Шаблоны
+              пересекаются, иногда захватывают омонимы; их счётчики нельзя
+              складывать в общий итог.
+            </p>
+            <h2>Чего здесь нет</h2>
+            <p>
+              8 466 сообщений отмечены как медиа, содержимое которого
+              недоступно. Мы не восстанавливали фотографии, голосовые и
+              удалённые реплики по догадкам. Адресоподобные имена заменены. На
+              сайте — публичная редакция: статистика и пересказы; полного
+              частного корпуса здесь нет.
+            </p>
+            <h2>Перепроверка этого издания</h2>
+            <p id="verification-note">
+              Сцены сверены с опорными записями, а суммы участников, дней и
+              месяцев — с корпусом. Формулировки отделяют подтверждённое
+              действие от предложения, шутки и пересказа.
+            </p>
+            <div class="download-row">
+              <a href="statistika.csv" download class="button secondary"
+                >Данные по месяцам ↓</a
+              ><a href="uchastniki.csv" download class="button secondary"
+                >Участники и числа ↓</a
+              ><a href="hronika.csv" download class="button secondary"
+                >Реестр сцен ↓</a
+              >
+            </div>
+          </article>
+          <aside class="method-aside">
+            <span class="eyebrow">Контрольные числа</span>
+            <div id="method-register"></div>
+            <a
+              href="https://github.com/farrahovd234/zakupochka"
+              target="_blank"
+              rel="noreferrer"
+              class="text-link caption"
+              >Открытый код ↗</a
+            >
+          </aside>
+        </div>
+      </section>
+
+      <section data-view="search" hidden class="wrap inner-view">
+        <div class="page-heading">
+          <span class="eyebrow">Где-то это уже было</span>
+          <h1>Всё связано.<br />Осталось найти.</h1>
+          <p>Главы, люди, события, мемы и внешний круг публичной летописи.</p>
+        </div>
+        <label class="field global-search"
+          >Что ищем<input
+            id="global-query"
+            type="search"
+            placeholder="Имя, событие или тот самый мем"
+            autocomplete="off"
+        /></label>
+        <div class="search-kinds" aria-label="Фильтр результатов">
+          <button data-search-kind="all" aria-pressed="true">Всё</button
+          ><button data-search-kind="era" aria-pressed="false">Главы</button
+          ><button data-search-kind="person" aria-pressed="false">Люди</button
+          ><button data-search-kind="scene" aria-pressed="false">События</button
+          ><button data-search-kind="meme" aria-pressed="false">Мемы</button
+          ><button data-search-kind="entity" aria-pressed="false">
+            Внешний круг
+          </button>
+        </div>
+        <div class="results-line">
+          <span id="search-count" role="status"></span>
+        </div>
+        <div id="search-results"></div>
+      </section>
+      <section data-view="thread" hidden class="wrap inner-view">
+        <div id="thread-heading" class="page-heading"></div>
+        <div id="thread-body" class="thread-body"></div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <div>
+        <a href="#overview" class="footer-brand"
+          >ЗакупОчка<span class="ink-accent">.</span></a
+        >
+        <p>На сбор друзей.<br />И всего, что получилось дальше.</p>
+      </div>
+      <nav aria-label="Дополнительные разделы">
+        <a href="#chronicle">Хроника</a><a href="#cast">Внешний круг</a
+        ><a href="#method">Как считали</a
+        ><a
+          href="https://github.com/farrahovd234/zakupochka"
+          target="_blank"
+          rel="noreferrer"
+          >GitHub ↗</a
+        >
+      </nav>
+      <div class="footer-colophon">
+        <span class="mono">2025—2026 · Издание № 01</span
+        ><span>Редакторский пересказ, настоящие числа</span
+        ><a
+          href="https://github.com/heydamir/unslop"
+          target="_blank"
+          rel="noreferrer"
+          >С подходом Unslop · Damir Sokolovsky</a
+        >
+      </div>
+    </footer>
+    <dialog id="detail-dialog" aria-labelledby="detail-title">
+      <form method="dialog" class="dialog-top">
+        <span class="eyebrow" id="detail-type">Из летописи</span
+        ><button class="close-button" aria-label="Закрыть карточку">
+          Закрыть <span aria-hidden="true">×</span>
+        </button>
+      </form>
+      <div id="detail-content"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" hidden></div>
+    <noscript
+      ><p class="wrap">
+        Для переходов по главам, поиска и просмотра карточек включи JavaScript.
+        <a href="statistika.csv">Скачать данные по месяцам</a>.
+      </p></noscript
+    >
+  </body>
 </html>

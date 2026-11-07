@@ -1,0 +1,13 @@
+{
+  "name": "zakupochka-almanac",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Интерактивная публичная летопись Закупочки",
+  "scripts": {
+    "check": "node --check app.js && node --check data.js && node scripts/check-data.cjs",
+    "test": "node tests/site.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
