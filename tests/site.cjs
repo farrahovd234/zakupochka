@@ -274,8 +274,12 @@ async function route(page, hash) {
         "не устанавливают рождение",
       ),
     );
-    await page.keyboard.press("Escape");
-    await route(page, "memes");
+    await page.evaluate(() => {
+      document.querySelector("dialog").close();
+      location.hash = "#memes";
+    });
+    await page.waitForFunction(() => document.querySelectorAll(".meme-entry").length === 63);
+    check("queued card close cannot restore an obsolete filter", !page.url().includes("q="));
     const deepCard = page.locator(".meme-entry .text-link").nth(40);
     await deepCard.scrollIntoViewIfNeeded();
     await deepCard.focus();

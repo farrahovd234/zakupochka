@@ -681,7 +681,13 @@
   }
   $("detail-dialog").addEventListener("close", () => {
     if ($("detail-dialog").open) return;
-    if (activeDetail && params.has(activeDetail)) {
+    const hash = location.hash.slice(1);
+    const separator = hash.indexOf("?");
+    const liveView = separator < 0 ? hash : hash.slice(0, separator);
+    const liveParams = new URLSearchParams(separator < 0 ? "" : hash.slice(separator + 1));
+    // A queued close event must not overwrite a navigation that already changed the URL.
+    const stillOnClosedCard = liveView === current && liveParams.toString() === params.toString();
+    if (activeDetail && params.has(activeDetail) && stillOnClosedCard) {
       params.delete(activeDetail);
       history.replaceState(null, "", url(current, Object.fromEntries(params)));
     }
