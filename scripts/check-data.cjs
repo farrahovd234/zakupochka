@@ -76,6 +76,12 @@ for (const profile of d.profiles)
     profile.messages,
   );
 const json = JSON.stringify(d);
+// Exact archive display name explicitly retained at the user's request.
+const originalAddressNick = "Сыромолотова 18 Новосинарский бульвар 7";
+const privacyScan = json.replaceAll(originalAddressNick, "");
+assert.equal(d.profiles.find((p) => p.id === "p07").name, originalAddressNick);
+assert.equal(d.profiles.find((p) => p.id === "p18").name, "/219");
+assert.equal(d.profiles.find((p) => p.id === "p25").name, "Адель");
 for (const pattern of [
   /\/home\//,
   /file:\/\//,
@@ -85,7 +91,7 @@ for (const pattern of [
   /(?<!\w)@[A-Za-z][A-Za-z0-9_]{2,}/,
   /(?<!\d)(?:\+7|8)[ ()-]*(?:\d[ ()-]*){10}(?!\d)/,
 ])
-  assert(!pattern.test(json), `private data pattern: ${pattern}`);
+  assert(!pattern.test(privacyScan), `private data pattern: ${pattern}`);
 for (const field of ['"message_id"', '"reply_n"', '"forward_name"', '"text":'])
   assert(!json.includes(field), `raw corpus field: ${field}`);
 assert.equal(d.entities.find((e) => e.id === "x12").name, "Тарасов");
